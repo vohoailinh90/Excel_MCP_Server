@@ -32,8 +32,20 @@ doing the work.
 
 ## Scope of this file
 
-This file records the platform constraint and nothing else. It deliberately
+This file records the platform constraint and the repository layout below, nothing else. It deliberately
 does not define a routing policy, agent roster or review process — this
 repository has not adopted one, and inventing rules here that nobody agreed to
 would be worse than the silence it replaces. Follow the conventions already in
 the code and in `README.md`.
+
+## Repository layout
+
+The root holds only what a user needs to run the server: `server.py`, README,
+`requirements.txt` and this file. The Excel backends live in `backends/`, the
+demo in `demo/`, developer tooling in `scripts/`. When a change adds a Python
+file, test or module, use `.claude/skills/repo-layout/SKILL.md`.
+
+`python scripts/layout_check.py` is the verdict: a test file in the root, a
+root `.py` with neither an `if __name__ == "__main__":` guard nor the
+`# layout: entry-point` marker in its first lines, or more than three root
+entry points fails it. Run it rather than judging the tree by eye.
