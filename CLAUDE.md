@@ -32,11 +32,12 @@ doing the work.
 
 ## Scope of this file
 
-This file records the platform constraint and the repository layout below, nothing else. It deliberately
-does not define a routing policy, agent roster or review process — this
-repository has not adopted one, and inventing rules here that nobody agreed to
-would be worse than the silence it replaces. Follow the conventions already in
-the code and in `README.md`.
+This file records the platform constraint, the repository layout and the *Pull request
+lifecycle* below, nothing else. It deliberately does not define a routing policy or agent
+roster — this repository has not adopted one, and inventing rules here that nobody agreed to
+would be worse than the silence it replaces. The owner asked on 2026-10-12 that every
+repository follow the same pull request loop, so that one section is the review process here,
+and the only one. Follow the conventions already in the code and in `README.md`.
 
 ## Repository layout
 
