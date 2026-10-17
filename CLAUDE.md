@@ -32,8 +32,8 @@ doing the work.
 
 ## Scope of this file
 
-This file records the platform constraint, the repository layout and the *Pull request
-lifecycle* below, nothing else. It deliberately does not define a routing policy or agent
+This file records the platform constraint, the repository layout, the *Pull request
+lifecycle* and the team agent process below, nothing else. It deliberately does not define a routing policy or agent
 roster — this repository has not adopted one, and inventing rules here that nobody agreed to
 would be worse than the silence it replaces. The owner asked on 2026-10-12 that every
 repository follow the same pull request loop, so that one section is the review process here,
